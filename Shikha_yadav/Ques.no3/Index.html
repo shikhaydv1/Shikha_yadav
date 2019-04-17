@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html page</title>
+
+    </head>
+    <body>
+            <form onsubmit="return validation()"  action="Welcome.html" method="post">
+                <table>
+                 <tr>
+                    <td>Bank</td>
+                    
+                    <td><select>
+                        <option>Nepal Bank</option>
+                        <option>Janta Bank</option>
+                        <option>NIC Bank</option>
+                    </select></td>
+                 </tr>
+                 <tr>
+                    <td>Bank Branch</td>
+                    <td><select>
+                        <option>New Baneshwor</option>
+                        <option>Putlisadka</option>
+                        <option>Lagankhel</option>
+                    </select></td>
+                 </tr>
+                 <tr>
+                    <td>Account No</td>
+                    <td><input type="number" id="accountnumber">
+                        <label id="Ac" style="color:red ; visibility:hidden">Can't left empty</label>
+                    </td>
+                 </tr>
+                 <tr><td>Amount</td>
+                  <td>  <input type="radio" name="amount"> Saving  
+                    <input type="radio" name="amount"> Current
+                </td>
+                </tr>	
+                 <tr>
+                    <td>Date</td>
+                    <td><input type="datetime-local" name="date"></td>
+                 </tr>	
+                <tr>
+                   <td> <input type="submit" ></td>
+                </tr>
+                </table>
+                </form>
+                <script src="Validation.js"></script>   
+    </body>
+</html>
